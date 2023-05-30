@@ -28,3 +28,10 @@ console.log(username);
 
 username = username.toLowerCase()
 console.log(username);
+
+username = username.toUpperCase()
+console.log(username);
+
+username = username.toLowerCase()
+console.log(username);
+
