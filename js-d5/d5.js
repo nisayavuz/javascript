@@ -23,4 +23,14 @@ console.log(result);
 alert("welcome to my page")
 // Do not use too much alert because it is destructing and annoying, use it just to test.
 
-prompt("bir değer giriniz: ") // kullanıcıdan veri almak için kullanılır.
+let deger = prompt("bir değer giriniz: ") // kullanıcıdan veri almak için kullanılır.
+console.log( deger * 5)
+
+const agree = confirm("emin misin?") // onay kutusu, tamam'a basılırsa true, iptal'e basılırsa false döner. 
+
+//date objects
+const date = new Date() // new date'i başlatmayı sagliyor
+console.log(date);
+console.log(date.getFullYear());
+console.log(date.getMonth() + 1); // getMonth 0-11 arasi değer verdiği için +1 ile doğru sonuca ulaştık.
+console.log(date.getDate());
