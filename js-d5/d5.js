@@ -29,8 +29,22 @@ console.log( deger * 5)
 const agree = confirm("emin misin?") // onay kutusu, tamam'a basılırsa true, iptal'e basılırsa false döner. 
 
 //date objects
-const date = new Date() // new date'i başlatmayı sagliyor
-console.log(date);
-console.log(date.getFullYear());
-console.log(date.getMonth() + 1); // getMonth 0-11 arasi değer verdiği için +1 ile doğru sonuca ulaştık.
-console.log(date.getDate());
+const myDate = new Date() // new date'i başlatmayı sagliyor
+console.log(myDate);
+console.log(myDate.getFullYear());
+console.log(myDate.getMonth() + 1); // getMonth 0-11 arasi değer verdiği için +1 ile doğru sonuca ulaştık.
+console.log(myDate.getDate());
+
+let year = myDate.getFullYear(),
+    month = myDate.getMonth();
+    date = myDate.getDate(),
+    day = myDate.getDay(),
+    hour = myDate.getHours(),
+    minute = myDate.getMinutes(),
+    second = myDate.getSeconds();
+
+let months = [ "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"]
+let days = ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"]
+
+let dateTime = `Today is ${date} ${months[month]} ${days[day]} ${year} , time: ${hour}:${minute}:${second}.`
+console.log(dateTime);
