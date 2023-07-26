@@ -20,13 +20,13 @@ let result = 5>4 ? "evet" : "hayir"
 console.log(result);
 
 /****** Window Methods *******/
-alert("welcome to my page")
+// alert("welcome to my page")
 // Do not use too much alert because it is destructing and annoying, use it just to test.
 
-let deger = prompt("bir değer giriniz: ") // kullanıcıdan veri almak için kullanılır.
-console.log( deger * 5)
+// let deger = prompt("bir değer giriniz: ") // kullanıcıdan veri almak için kullanılır.
+// console.log( deger * 5)
 
-const agree = confirm("emin misin?") // onay kutusu, tamam'a basılırsa true, iptal'e basılırsa false döner. 
+// const agree = confirm("emin misin?") // onay kutusu, tamam'a basılırsa true, iptal'e basılırsa false döner. 
 
 //date objects
 const myDate = new Date() // new date'i başlatmayı sagliyor
@@ -48,3 +48,67 @@ let days = ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"
 
 let dateTime = `Today is ${date} ${months[month]} ${days[day]} ${year} , time: ${hour}:${minute}:${second}.`
 console.log(dateTime);
+
+// toString:Converts array to string
+// const names = ['Nisa', '1', 'TR', '23']
+// console.log(names.toString()) 
+
+// join 
+// const numbers = [1, 2, 3, 4, 5]
+// console.log(numbers.join()) // 1,2,3,4,5
+
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+
+console.log(names.join()) // Asabeneh,Mathias,Elias,Brook
+console.log(names.join('')) //AsabenehMathiasEliasBrook 
+
+//splice
+// const numbers = [1, 2, 3, 4, 5, 6]
+// numbers.splice(3, 3, 7, 8, 9)
+// console.log(numbers.splice(3, 3, 7, 8, 9))  // -> [1, 2, 3, 7, 8, 9] //it removes three item and replace three items
+
+// push and pop 
+// Push: adding item in the end. To add item to the end of an existing array we use the push method.
+// pop: Removing item in the end.
+
+// const numbers = [1, 2, 3, 4, 5]
+// numbers.push(6)
+// console.log(numbers) // -> [1,2,3,4,5,6]
+
+// numbers.pop() // -> remove one item from the end
+// console.log(numbers) // -> [1,2,3,4,5]
+
+// shift - unshift - reverse
+// shift: Removing one array element in the beginning of the array.
+// unshift: Adding array element in the beginning of the array.
+// reverse: reverse the order of an array.
+
+const numbers = [1, 2, 3, 4, 5]
+numbers.shift() // -> remove one item from the beginning
+console.log(numbers) // -> [2,3,4,5]
+
+numbers.unshift(0) // -> add one item from the beginning
+console.log(numbers) // -> [0,1,2,3,4,5]    
+
+numbers.reverse() // -> reverse array order
+console.log(numbers) // [5, 4, 3, 2, 1]
+
+numbers.reverse()
+console.log(numbers) // [1, 2, 3, 4, 5]
+
+let name = "nisa";
+reverseName = name.split("").reverse().join("");
+console.log(reverseName);
+
+const myNumbers = [1, 5, 7, 3, 6, [1, 2, 3]];
+console.log(myNumbers);
+// myNumbers.sort();
+// console.log(myNumbers);
+
+console.log(myNumbers[5][1]);
+console.log(myNumbers.length)
+console.log(myNumbers[0]);
+let lastIndex = myNumbers.length - 1; 
+console.log(lastIndex);
+
+console.log(myNumbers.pop())
