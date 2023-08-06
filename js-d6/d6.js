@@ -147,3 +147,5 @@ for(let i = 0; i<= 100; i++){
 }
 
 console.log("The sum of all even numbers = ", sumEven, "The sum of all odd numbers = ", sumOdd);
+
+console.log("completed")
