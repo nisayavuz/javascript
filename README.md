@@ -1,2 +1,2 @@
 # javascript
-Front-end egitimim suresince takip ettigim javascript derslerinde ogrendiklerim
+30 days of js
