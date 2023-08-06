@@ -72,7 +72,7 @@ console.log(names.join('')) //AsabenehMathiasEliasBrook
 // pop: Removing item in the end.
 
 // const numbers = [1, 2, 3, 4, 5]
-// numbers.push(6)
+// numbers.push(6)  
 // console.log(numbers) // -> [1,2,3,4,5,6]
 
 // numbers.pop() // -> remove one item from the end
@@ -112,3 +112,5 @@ let lastIndex = myNumbers.length - 1;
 console.log(lastIndex);
 
 console.log(myNumbers.pop())
+
+console.log("completed")
